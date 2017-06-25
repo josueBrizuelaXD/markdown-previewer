@@ -1,5 +1,5 @@
 const React = require("react");
-
+require("./css/markdown.css");
 
 const MarkDownView = React.createClass({
 	

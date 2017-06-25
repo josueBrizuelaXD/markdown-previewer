@@ -14,14 +14,20 @@ getInitialState: function() {
 
 	render: function() {
 		return (
+		<div>	
 		<div>
-		<div>
+			<h1 className="title">MarkDown Previewer</h1>
+		</div>	
+		<div className="container">
+			
+		<div className="item">
 			<TextEditor onTextChange={this.handleTextChange}/>
 		</div>	
-		<div>
-			<MarkDownView markup={this.state.markup}/>	
+		<div className="item" id="left-item">
+			<MarkDownView markup={this.state.markup}/>
 		</div>	
 		</div>
+		</div>	
 		);
 	},
 	

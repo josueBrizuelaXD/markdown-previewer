@@ -1,13 +1,13 @@
 const React = require("react");
 const marked = require("marked");
-
+require("./css/textEditor.css");
 
 var TextEditor = React.createClass({
 	
 	render: function() {
 		return (
 		
-		<textarea name="editor" rows="50" cols="50" onChange={this.handleChange}></textarea>
+		<textarea name="editor" onChange={this.handleChange}></textarea>
 		
 		);
 	},
